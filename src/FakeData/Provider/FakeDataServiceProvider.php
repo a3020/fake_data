@@ -3,6 +3,7 @@
 namespace A3020\FakeData\Provider;
 
 use A3020\FakeData\Console\Command\CreateLogsCommand;
+use A3020\FakeData\Console\Command\CreateUsersCommand;
 use Concrete\Core\Application\Application;
 
 class FakeDataServiceProvider
@@ -26,5 +27,6 @@ class FakeDataServiceProvider
     {
         $console = $this->app->make('console');
         $console->add(new CreateLogsCommand());
+        $console->add(new CreateUsersCommand());
     }
 }
