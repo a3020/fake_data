@@ -7,6 +7,7 @@
 ## Currently supported commands
 You can create fake data via the CLI. Start the CLI environment via `concrete/bin/concrete5`. Supported commands are:
 - `fake-data:create:logs --amount 100`
+- `fake-data:create:users --amount 50`
 
 ## Installation Composer based environment
 
@@ -25,6 +26,10 @@ $ ./vendor/bin/concrete5 c5:package-install fake_data
 ## Installation normal environment
 In a normal concrete5 environment, download the ZIP file, extract its
 contents to `packages` and run `composer install` in the `packages/fake_data` directory.
+
+## Screenshot
+![CLI commands](https://user-images.githubusercontent.com/1431100/32317891-bf9105f0-bfb5-11e7-8a13-450519179541.png)
+![Generated Users](https://user-images.githubusercontent.com/1431100/32317836-843ac75c-bfb5-11e7-940f-13917fb793b1.png)
 
 [ico-version]: https://img.shields.io/packagist/v/a3020/fake_data.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
