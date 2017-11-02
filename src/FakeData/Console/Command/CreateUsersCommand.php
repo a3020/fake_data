@@ -65,7 +65,7 @@ class CreateUsersCommand extends Command
             'uIsValidated' => function() use ($faker) { return $faker->boolean; },
             'uDateAdded' => function() use ($faker) { return $faker->dateTimeThisYear(); },
             'uLastLogin' => function() use ($faker) { return $faker->dateTimeThisYear()->getTimestamp(); },
-            'uLastIP' => function() use ($faker) { return $faker->ipv4; },
+            'uLastIP' => function() use ($faker) { return bin2hex(inet_pton($faker->ipv4)); },
             'uTimezone' => function() use ($faker) { return $faker->timezone; },
             'uDefaultLanguage' => function() use ($faker) { return $faker->locale; },
             'uLastAuthTypeID' => null,
