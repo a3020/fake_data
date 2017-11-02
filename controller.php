@@ -9,7 +9,7 @@ final class Controller extends Package
 {
     protected $pkgHandle = 'fake_data';
     protected $appVersionRequired = '8.2.1';
-    protected $pkgVersion = '0.9.0';
+    protected $pkgVersion = '0.9.1';
     protected $pkgAutoloaderRegistries = [
         'src/FakeData' => '\A3020\FakeData',
     ];
