@@ -66,10 +66,14 @@ class CreateLogsCommand extends Command
     }
 
     /**
-     * @return array
+     * @return int[]
      */
     private function getAllUserIds()
     {
-        return (array) $this->connection->fetchColumn('SELECT uID FROM Users');
+        $rows = $this->connection->fetchAll('SELECT uID FROM Users');
+
+        return array_map(function($row) {
+            return (int) $row['uID'];
+        }, $rows);
     }
 }
