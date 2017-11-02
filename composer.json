@@ -1,0 +1,10 @@
+{
+  "name": "a3020/fake_data",
+  "description": "Use fake data in your concrete5 installation",
+  "type": "concrete5-package",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "require": {
+    "fzaninotto/faker": "^1.7"
+  }
+}
